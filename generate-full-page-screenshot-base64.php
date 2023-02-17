@@ -1,6 +1,5 @@
 <?php
-
-
+header("Access-Control-Allow-Origin: *");
 $_SERVER['REQUEST_URI']; 
 $strs = explode("url=",$_SERVER['REQUEST_URI']);
 $url = $strs[1];
