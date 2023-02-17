@@ -1,7 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-ini_set('max_execution_time', 0);
-set_time_limit(0);
+ini_set('max_execution_time', -1);
 $_SERVER['REQUEST_URI']; 
 $strs = explode("url=",$_SERVER['REQUEST_URI']);
 $url = $strs[1];
