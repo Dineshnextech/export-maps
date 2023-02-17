@@ -6,6 +6,7 @@ const url = args[2];
     // Create a browser instance
     const browser = await puppeteer.launch({
         defaultViewport: null,
+        executablePath: "/usr/bin/chromium-browser",
         headless: true,
         args: [
             '--force-gpu-mem-available-mb=4096'
